@@ -171,7 +171,7 @@ class LoginPage extends React.Component {
                     <CardFooter className={classes.cardFooter}>
                       <Link to={"/dashboard"} className={classes.link}>
                         <Button simple color="primary" size="lg">
-                          Get started
+                          Log In
                         </Button>
                       </Link>
                     </CardFooter>
