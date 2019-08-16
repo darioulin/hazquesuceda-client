@@ -38,7 +38,7 @@ import Parallax from "components/Parallax/Parallax.jsx";
 
 import profile from "assets/img/perfil.jpg";
 
-import studio1 from "assets/img/examples/studio-1.jpg";
+import dashboardimg from "assets/img/dashboard.png";
 import studio2 from "assets/img/examples/studio-2.jpg";
 import studio3 from "assets/img/examples/studio-3.jpg";
 import studio4 from "assets/img/examples/studio-4.jpg";
@@ -90,37 +90,24 @@ class Dashboard extends React.Component {
                 </GridItem>
               </GridContainer>
               <GridContainer justify="center">
-                <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
+                <GridItem xs={12} sm={12} md={12} className={classes.navWrapper}>
                   <NavPills
                     alignCenter
                     color="primary"
+                    horizontal={{
+                    tabsGrid: { xs: 4, sm: 2, md: 1 },
+                    contentGrid: { xs: 12, sm: 10, md: 10 }
+                  }}
                     tabs={[
                       {
                         tabButton: "Dashboard",
                         tabIcon: Camera,
                         tabContent: (
                           <GridContainer justify="center">
-                            <GridItem xs={12} sm={12} md={4}>
+                            <GridItem xs={12} sm={12} md={12}>
                               <img
                                 alt="..."
-                                src={studio1}
-                                className={navImageClasses}
-                              />
-                              <img
-                                alt="..."
-                                src={studio2}
-                                className={navImageClasses}
-                              />
-                            </GridItem>
-                            <GridItem xs={12} sm={12} md={4}>
-                              <img
-                                alt="..."
-                                src={studio5}
-                                className={navImageClasses}
-                              />
-                              <img
-                                alt="..."
-                                src={studio4}
+                                src={dashboardimg}
                                 className={navImageClasses}
                               />
                             </GridItem>
@@ -133,33 +120,10 @@ class Dashboard extends React.Component {
                         tabContent: (
                           <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={4}>
-                              <img
-                                alt="..."
-                                src={work1}
-                                className={navImageClasses}
-                              />
-                              <img
-                                alt="..."
-                                src={work2}
-                                className={navImageClasses}
-                              />
-                              <img
-                                alt="..."
-                                src={work3}
-                                className={navImageClasses}
-                              />
+                              <h1>Membresias</h1>
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
-                              <img
-                                alt="..."
-                                src={work4}
-                                className={navImageClasses}
-                              />
-                              <img
-                                alt="..."
-                                src={work5}
-                                className={navImageClasses}
-                              />
+                              <h1>Nuevo miembro</h1>
                             </GridItem>
                           </GridContainer>
                         )
@@ -170,33 +134,10 @@ class Dashboard extends React.Component {
                         tabContent: (
                           <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={4}>
-                              <img
-                                alt="..."
-                                src={work4}
-                                className={navImageClasses}
-                              />
-                              <img
-                                alt="..."
-                                src={studio3}
-                                className={navImageClasses}
-                              />
+                              <h1>Desde configuración</h1>
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
-                              <img
-                                alt="..."
-                                src={work2}
-                                className={navImageClasses}
-                              />
-                              <img
-                                alt="..."
-                                src={work1}
-                                className={navImageClasses}
-                              />
-                              <img
-                                alt="..."
-                                src={studio1}
-                                className={navImageClasses}
-                              />
+                              <h3>Config</h3>
                             </GridItem>
                           </GridContainer>
                         )
