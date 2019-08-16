@@ -23,7 +23,7 @@ import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
-import Camera from "@material-ui/icons/Camera";
+import Camera from "@material-ui/icons/AccountCircle";
 import Palette from "@material-ui/icons/Palette";
 import Favorite from "@material-ui/icons/Favorite";
 // core components
@@ -96,7 +96,7 @@ class Dashboard extends React.Component {
                     color="primary"
                     tabs={[
                       {
-                        tabButton: "Studio",
+                        tabButton: "Dashboard",
                         tabIcon: Camera,
                         tabContent: (
                           <GridContainer justify="center">
@@ -128,7 +128,7 @@ class Dashboard extends React.Component {
                         )
                       },
                       {
-                        tabButton: "Work",
+                        tabButton: "Membresias",
                         tabIcon: Palette,
                         tabContent: (
                           <GridContainer justify="center">
@@ -165,7 +165,7 @@ class Dashboard extends React.Component {
                         )
                       },
                       {
-                        tabButton: "Favorite",
+                        tabButton: "Configuración",
                         tabIcon: Favorite,
                         tabContent: (
                           <GridContainer justify="center">
