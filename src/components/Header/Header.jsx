@@ -88,7 +88,10 @@ class Header extends React.Component {
       [classes.absolute]: absolute,
       [classes.fixed]: fixed
     });
-    const brandComponent = <Button className={classes.title}>{brand}</Button>;
+    
+    const brandComponent = 
+    <Button className={classes.title}>Haz que suceda</Button>;
+    
     return (
       <AppBar className={appBarClasses}>
         <Toolbar className={classes.container}>
@@ -102,9 +105,7 @@ class Header extends React.Component {
               brandComponent
             )}
           </div>
-          <Hidden smDown implementation="css">
-            {rightLinks}
-          </Hidden>
+                
           <Hidden mdUp>
             <IconButton
               color="inherit"
@@ -115,7 +116,7 @@ class Header extends React.Component {
             </IconButton>
           </Hidden>
         </Toolbar>
-        <Hidden mdUp implementation="js">
+        {/* <Hidden mdUp implementation="js">
           <Drawer
             variant="temporary"
             anchor={"right"}
@@ -130,7 +131,7 @@ class Header extends React.Component {
               {rightLinks}
             </div>
           </Drawer>
-        </Hidden>
+        </Hidden> */}
       </AppBar>
     );
   }
