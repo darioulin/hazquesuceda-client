@@ -117,10 +117,10 @@ class LoginPage extends React.Component {
                         </Button>
                       </div>
                     </CardHeader>
-                    <p className={classes.divider}>Or Be Classical</p>
+                    
                     <CardBody>
                       <CustomInput
-                        labelText="First Name..."
+                        labelText="Nombre"
                         id="first"
                         formControlProps={{
                           fullWidth: true
@@ -135,7 +135,7 @@ class LoginPage extends React.Component {
                         }}
                       />
                       <CustomInput
-                        labelText="Email..."
+                        labelText="Correo Electrónico"
                         id="email"
                         formControlProps={{
                           fullWidth: true
@@ -150,7 +150,7 @@ class LoginPage extends React.Component {
                         }}
                       />
                       <CustomInput
-                        labelText="Password"
+                        labelText="Contraseña"
                         id="pass"
                         formControlProps={{
                           fullWidth: true

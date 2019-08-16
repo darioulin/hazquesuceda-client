@@ -66,6 +66,12 @@ class Components extends React.Component {
                     Genera ingresos recurrentes y predecibles en tu ONG
                     integrando un modelo de membresias 100% automatizado.
                   </h3>
+                  <Link to={"/login"} className={classes.link}>
+                  <Button color="success" size="lg">
+                    <i className="fas fa-sign-in-alt" />
+                    Acceder
+                  </Button>
+                </Link>
                 </div>
               </GridItem>
             </GridContainer>
