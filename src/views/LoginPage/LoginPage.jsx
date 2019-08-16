@@ -69,7 +69,6 @@ class LoginPage extends React.Component {
           absolute
           color="transparent"
           brand="Material Kit React"
-          rightLinks={<HeaderLinks />}
           {...rest}
         />
         <div
