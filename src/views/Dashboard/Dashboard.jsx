@@ -50,6 +50,7 @@ import work4 from "assets/img/examples/mariya-georgieva.jpg";
 import work5 from "assets/img/examples/clem-onojegaw.jpg";
 
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";
+import Memberships from "./Sections/Memberships";
 
 class Dashboard extends React.Component {
   render() {
@@ -65,7 +66,6 @@ class Dashboard extends React.Component {
         <Header
           color="transparent"
           brand="Haz Que Suceda"
-          rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
             height: 200,
@@ -115,31 +115,17 @@ class Dashboard extends React.Component {
                         )
                       },
                       {
-                        tabButton: "Membresias",
+                        tabButton: "Registrar Miembro",
                         tabIcon: Palette,
                         tabContent: (
-                          <GridContainer justify="center">
-                            <GridItem xs={12} sm={12} md={4}>
-                              <h1>Membresias</h1>
-                            </GridItem>
-                            <GridItem xs={12} sm={12} md={4}>
-                              <h1>Nuevo miembro</h1>
-                            </GridItem>
-                          </GridContainer>
+                          <Memberships/>
                         )
                       },
                       {
-                        tabButton: "Configuración",
+                        tabButton: "Miembros",
                         tabIcon: Favorite,
                         tabContent: (
-                          <GridContainer justify="center">
-                            <GridItem xs={12} sm={12} md={4}>
-                              <h1>Desde configuración</h1>
-                            </GridItem>
-                            <GridItem xs={12} sm={12} md={4}>
-                              <h3>Config</h3>
-                            </GridItem>
-                          </GridContainer>
+                          <h1>Lista Miembros</h1>
                         )
                       }
                     ]}
