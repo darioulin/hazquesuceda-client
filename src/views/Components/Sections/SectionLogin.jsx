@@ -18,6 +18,8 @@
 import React from "react";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
+// react components for routing our app without refresh
+import { Link } from "react-router-dom";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import InputAdornment from "@material-ui/core/InputAdornment";
@@ -139,9 +141,11 @@ class SectionLogin extends React.Component {
                     />
                   </CardBody>
                   <CardFooter className={classes.cardFooter}>
-                    <Button simple color="primary" size="lg">
-                      Get started
-                    </Button>
+                    <Link to={"/dashboard"} className={classes.link}>
+                      <Button simple color="primary" size="lg">
+                        Log In
+                      </Button>
+                    </Link>
                   </CardFooter>
                 </form>
               </Card>
